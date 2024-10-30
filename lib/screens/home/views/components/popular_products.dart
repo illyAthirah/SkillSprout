@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:shop/components/product/product_card.dart';
-import 'package:shop/models/product_model.dart';
+import 'package:shop/models/topic_model.dart';
 import 'package:shop/route/screen_export.dart';
 
 import '../../../../constants.dart';
 
-class PopularProducts extends StatelessWidget {
-  const PopularProducts({
+class PopularTopics extends StatelessWidget {
+  const PopularTopics({
     super.key,
   });
 
@@ -19,32 +19,27 @@ class PopularProducts extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(defaultPadding),
           child: Text(
-            "Popular products",
+            "Popular Topics",
             style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
-        // While loading use 👇
-        // const ProductsSkelton(),
         SizedBox(
           height: 220,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            // Find demoPopularProducts on models/ProductModel.dart
-            itemCount: demoPopularProducts.length,
+            itemCount: demoPopularTopics.length,
             itemBuilder: (context, index) => Padding(
               padding: EdgeInsets.only(
                 left: defaultPadding,
-                right: index == demoPopularProducts.length - 1
-                    ? defaultPadding
-                    : 0,
+                right:
+                    index == demoPopularTopics.length - 1 ? defaultPadding : 0,
               ),
               child: ProductCard(
-                image: demoPopularProducts[index].image,
-                brandName: demoPopularProducts[index].brandName,
-                title: demoPopularProducts[index].title,
-                price: demoPopularProducts[index].price,
-                priceAfetDiscount: demoPopularProducts[index].priceAfetDiscount,
-                dicountpercent: demoPopularProducts[index].dicountpercent,
+                image: demoPopularTopics[index].image,
+                topicName: demoPopularTopics[index].topicName,
+                title: demoPopularTopics[index].title,
+                range: demoPopularTopics[index].range,
+                location: demoPopularTopics[index].location,
                 press: () {
                   Navigator.pushNamed(context, productDetailsScreenRoute,
                       arguments: index.isEven);

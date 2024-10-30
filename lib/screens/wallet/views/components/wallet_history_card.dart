@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_string_escapes, deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shop/components/product/secondary_product_card.dart';
@@ -48,8 +50,8 @@ class WalletHistoryCard extends StatelessWidget {
             ),
             trailing: Text(
               isReturn
-                  ? "+ \$${amount.toStringAsFixed(2)}"
-                  : "- \$${amount.toStringAsFixed(2)}",
+                  ? "+ \RM${amount.toStringAsFixed(1)}"
+                  : "- \RM${amount.toStringAsFixed(1)}",
               style: Theme.of(context)
                   .textTheme
                   .titleSmall!
@@ -67,10 +69,10 @@ class WalletHistoryCard extends StatelessWidget {
                   right: defaultPadding),
               child: SecondaryProductCard(
                 image: products[index].image,
-                brandName: products[index].brandName,
+                topicName: products[index].topicName,
                 title: products[index].title,
-                price: products[index].price,
-                priceAfetDiscount: products[index].priceAfetDiscount,
+                range: products[index].range,
+                location: products[index].location, // Added the required 'location' argument
                 style: ElevatedButton.styleFrom(
                   maximumSize: const Size(double.infinity, 90),
                   padding: EdgeInsets.zero,

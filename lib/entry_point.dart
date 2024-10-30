@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shop/constants.dart';
 import 'package:shop/route/screen_export.dart';
+import 'package:shop/screens/checkout/views/cart_screen.dart';
 
 class EntryPoint extends StatefulWidget {
   const EntryPoint({super.key});
@@ -16,7 +17,7 @@ class _EntryPointState extends State<EntryPoint> {
     HomeScreen(),
     DiscoverScreen(),
     BookmarkScreen(),
-    // EmptyCartScreen(), // if Cart is empty
+ 
     CartScreen(),
     ProfileScreen(),
   ];
@@ -33,20 +34,18 @@ class _EntryPointState extends State<EntryPoint> {
                 Theme.of(context).iconTheme.color!.withOpacity(
                     Theme.of(context).brightness == Brightness.dark ? 0.3 : 1),
             BlendMode.srcIn),
-      );
-    }
+      );    }
+    
 
     return Scaffold(
       appBar: AppBar(
-        // pinned: true,
-        // floating: true,
-        // snap: true,
+       
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         leading: const SizedBox(),
         leadingWidth: 0,
         centerTitle: false,
         title: SvgPicture.asset(
-          "assets/logo/Shoplon.svg",
+          "assets/logo/Uni2U",
           colorFilter: ColorFilter.mode(
               Theme.of(context).iconTheme.color!, BlendMode.srcIn),
           height: 20,

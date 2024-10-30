@@ -6,13 +6,12 @@ import 'package:shop/components/network_image_with_loader.dart';
 import 'package:shop/screens/product/views/added_to_cart_message_screen.dart';
 import 'package:shop/screens/product/views/components/product_list_tile.dart';
 import 'package:shop/screens/product/views/location_permission_store_availability_screen.dart';
-import 'package:shop/screens/product/views/size_guide_screen.dart';
 
 import '../../../constants.dart';
 import 'components/product_quantity.dart';
 import 'components/selected_colors.dart';
 import 'components/selected_size.dart';
-import 'components/unit_price.dart';
+import 'components/unit_range.dart';
 
 class ProductBuyNowScreen extends StatefulWidget {
   const ProductBuyNowScreen({super.key});
@@ -26,9 +25,9 @@ class _ProductBuyNowScreenState extends State<ProductBuyNowScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: CartButton(
-        price: 269.4,
+        range: 269.4,
         title: "Add to cart",
-        subTitle: "Total price",
+        subTitle: "Total range",
         press: () {
           customModalBottomSheet(
             context,
@@ -77,9 +76,8 @@ class _ProductBuyNowScreenState extends State<ProductBuyNowScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Expanded(
-                          child: UnitPrice(
-                            price: 145,
-                            priceAfterDiscount: 134.7,
+                          child: Unitrange(
+                            range: 145,
                           ),
                         ),
                         ProductQuantity(
@@ -122,7 +120,7 @@ class _ProductBuyNowScreenState extends State<ProductBuyNowScreen> {
                       customModalBottomSheet(
                         context,
                         height: MediaQuery.of(context).size.height * 0.9,
-                        child: const SizeGuideScreen(),
+                        child: Container(),
                       );
                     },
                   ),

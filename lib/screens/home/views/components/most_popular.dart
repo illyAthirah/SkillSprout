@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:shop/components/product/secondary_product_card.dart';
-import 'package:shop/models/product_model.dart';
+import 'package:shop/models/topic_model.dart';
 
 import '../../../../constants.dart';
 import '../../../../route/route_constants.dart';
 
-class MostPopular extends StatelessWidget {
-  const MostPopular({
+class BestRating extends StatelessWidget {
+  const BestRating({
     super.key,
   });
 
@@ -19,32 +19,27 @@ class MostPopular extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(defaultPadding),
           child: Text(
-            "Most popular",
+            "Best Rating Topics",
             style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
-        // While loading use 👇
-        // SeconderyProductsSkelton(),
         SizedBox(
           height: 114,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            // Find demoPopularProducts on models/ProductModel.dart
-            itemCount: demoPopularProducts.length,
+            itemCount: demoPopularTopics.length,
             itemBuilder: (context, index) => Padding(
               padding: EdgeInsets.only(
                 left: defaultPadding,
-                right: index == demoPopularProducts.length - 1
-                    ? defaultPadding
-                    : 0,
+                right:
+                    index == demoPopularTopics.length - 1 ? defaultPadding : 0,
               ),
               child: SecondaryProductCard(
-                image: demoPopularProducts[index].image,
-                brandName: demoPopularProducts[index].brandName,
-                title: demoPopularProducts[index].title,
-                price: demoPopularProducts[index].price,
-                priceAfetDiscount: demoPopularProducts[index].priceAfetDiscount,
-                dicountpercent: demoPopularProducts[index].dicountpercent,
+                image: demoBestRating[index].image,
+                topicName: demoBestRating[index].topicName,
+                title: demoBestRating[index].title,
+                range: demoBestRating[index].range,
+                location: demoBestRating[index].location,
                 press: () {
                   Navigator.pushNamed(context, productDetailsScreenRoute,
                       arguments: index.isEven);

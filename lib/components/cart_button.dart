@@ -5,13 +5,13 @@ import '../constants.dart';
 class CartButton extends StatelessWidget {
   const CartButton({
     super.key,
-    required this.price,
+    required this.range,
     this.title = "Buy Now",
-    this.subTitle = "Unit price",
+    this.subTitle = "Unit range",
     required this.press,
   });
 
-  final double price;
+  final double range;
   final String title, subTitle;
   final VoidCallback press;
 
@@ -45,7 +45,7 @@ class CartButton extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "\$${price.toStringAsFixed(2)}",
+                            "\RM${range.toStringAsFixed(2)}",
                             style: Theme.of(context)
                                 .textTheme
                                 .titleSmall!

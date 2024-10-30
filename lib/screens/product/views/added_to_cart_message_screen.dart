@@ -22,7 +22,7 @@ class AddedToCartMessageScreen extends StatelessWidget {
               ),
               const Spacer(flex: 2),
               Text(
-                "Added to cart",
+                "Chat to book",
                 style: Theme.of(context)
                     .textTheme
                     .headlineSmall!
@@ -30,7 +30,7 @@ class AddedToCartMessageScreen extends StatelessWidget {
               ),
               const SizedBox(height: defaultPadding / 2),
               const Text(
-                "Click the checkout button to complete the purchase process.",
+                "Click the Chat button to complete the booking process.",
                 textAlign: TextAlign.center,
               ),
               const Spacer(flex: 2),
@@ -38,12 +38,12 @@ class AddedToCartMessageScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, entryPointScreenRoute);
                 },
-                child: const Text("Continue shopping"),
+                child: const Text("Continue browsing"),
               ),
               const SizedBox(height: defaultPadding),
               ElevatedButton(
                 onPressed: () {},
-                child: const Text("Checkout"),
+                child: const Text("Chat University"),
               ),
               const Spacer(),
             ],

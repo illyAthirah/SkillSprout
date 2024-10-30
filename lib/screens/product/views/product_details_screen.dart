@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:shop/components/buy_full_ui_kit.dart';
 import 'package:shop/components/cart_button.dart';
 import 'package:shop/components/custom_modal_bottom_sheet.dart';
 import 'package:shop/components/product/product_card.dart';
@@ -26,7 +25,7 @@ class ProductDetailsScreen extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: isProductAvailable
           ? CartButton(
-              price: 140,
+              range: 140,
               press: () {
                 customModalBottomSheet(
                   context,
@@ -71,27 +70,12 @@ class ProductDetailsScreen extends StatelessWidget {
             ProductListTile(
               svgSrc: "assets/icons/Product.svg",
               title: "Product Details",
-              press: () {
-                customModalBottomSheet(
-                  context,
-                  height: MediaQuery.of(context).size.height * 0.92,
-                  child: const BuyFullKit(
-                      images: ["assets/screens/Product detail.png"]),
-                );
-              },
+              press: () {},
             ),
             ProductListTile(
               svgSrc: "assets/icons/Delivery.svg",
               title: "Shipping Information",
-              press: () {
-                customModalBottomSheet(
-                  context,
-                  height: MediaQuery.of(context).size.height * 0.92,
-                  child: const BuyFullKit(
-                    images: ["assets/screens/Shipping information.png"],
-                  ),
-                );
-              },
+              press: () {},
             ),
             ProductListTile(
               svgSrc: "assets/icons/Return.svg",
@@ -149,11 +133,10 @@ class ProductDetailsScreen extends StatelessWidget {
                     child: ProductCard(
                       image: productDemoImg2,
                       title: "Sleeveless Tiered Dobby Swing Dress",
-                      brandName: "LIPSY LONDON",
-                      price: 24.65,
-                      priceAfetDiscount: index.isEven ? 20.99 : null,
-                      dicountpercent: index.isEven ? 25 : null,
-                      press: () {},
+                      topicName: "LIPSY LONDON",
+                      range: 24.65,
+                      location: '',
+                      press: () {}, 
                     ),
                   ),
                 ),

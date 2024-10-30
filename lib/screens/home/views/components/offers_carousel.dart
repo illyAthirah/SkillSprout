@@ -9,16 +9,16 @@ import 'package:shop/components/dot_indicators.dart';
 
 import '../../../../constants.dart';
 
-class OffersCarousel extends StatefulWidget {
-  const OffersCarousel({
+class AppsCarousel extends StatefulWidget {
+  const AppsCarousel({
     super.key,
   });
 
   @override
-  State<OffersCarousel> createState() => _OffersCarouselState();
+  State<AppsCarousel> createState() => _AppsCarouselState();
 }
 
-class _OffersCarouselState extends State<OffersCarousel> {
+class _AppsCarouselState extends State<AppsCarousel> {
   int _selectedIndex = 0;
   late PageController _pageController;
   late Timer _timer;
@@ -26,24 +26,24 @@ class _OffersCarouselState extends State<OffersCarousel> {
   // Offers List
   List offers = [
     BannerMStyle1(
-      text: "New items with \nFree shipping",
+      text: "letak sini",
       press: () {},
     ),
     BannerMStyle2(
-      title: "Black \nfriday",
-      subtitle: "Collection",
+      title: "letak sini",
+      subtitle: "letak sini",
       discountParcent: 50,
       press: () {},
     ),
     BannerMStyle3(
-      title: "Grab \nyours now",
+      title: "letak sini",
       discountParcent: 50,
       press: () {},
     ),
     BannerMStyle4(
       // image: , user your image
-      title: "SUMMER \nSALE",
-      subtitle: "SPECIAL OFFER",
+      title: "letak \n sini",
+      subtitle: "letak sini",
       discountParcent: 80,
       press: () {},
     ),
