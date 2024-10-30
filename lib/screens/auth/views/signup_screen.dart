@@ -22,7 +22,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         child: Column(
           children: [
             Image.asset(
-              "gambar 8",
+              "assets/images/U2U LOGO.jpg",
               height: MediaQuery.of(context).size.height * 0.35,
               width: double.infinity,
               fit: BoxFit.cover,

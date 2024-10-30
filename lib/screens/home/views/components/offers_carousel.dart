@@ -26,24 +26,20 @@ class _AppsCarouselState extends State<AppsCarousel> {
   // Offers List
   List offers = [
     BannerMStyle1(
-      text: "letak sini",
+      text: "Achieve your goals",
       press: () {},
     ),
     BannerMStyle2(
-      title: "letak sini",
-      subtitle: "letak sini",
-      discountParcent: 50,
+      title: "Learn, \nTeach, \nGrow",
       press: () {},
     ),
     BannerMStyle3(
-      title: "letak sini",
-      discountParcent: 50,
+      title: "We bring uni to you",
       press: () {},
     ),
     BannerMStyle4(
       // image: , user your image
-      title: "letak \n sini",
-      subtitle: "letak sini",
+      title: "Offer",
       discountParcent: 80,
       press: () {},
     ),

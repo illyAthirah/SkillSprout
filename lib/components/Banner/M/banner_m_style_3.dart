@@ -9,14 +9,13 @@ import '../../../constants.dart';
 class BannerMStyle3 extends StatelessWidget {
   const BannerMStyle3({
     super.key,
-    this.image = "https://i.imgur.com/8REExBV.png",
+    this.image =
+        "assets/images/pupils-doing-task-laptops-focused-teacher-monitoring-them.jpg",
     required this.title,
     required this.press,
-    required this.discountParcent,
   });
   final String? image;
   final String title;
-  final int discountParcent;
   final VoidCallback press;
 
   @override
@@ -40,14 +39,6 @@ class BannerMStyle3 extends StatelessWidget {
                           horizontal: defaultPadding / 2,
                           vertical: defaultPadding / 8),
                       color: Colors.white70,
-                      child: Text(
-                        "$discountParcent% off",
-                        style: const TextStyle(
-                          color: Colors.black54,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                        ),
-                      ),
                     ),
                     const SizedBox(height: defaultPadding / 2),
                     Text(

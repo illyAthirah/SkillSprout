@@ -17,7 +17,6 @@ class _EntryPointState extends State<EntryPoint> {
     HomeScreen(),
     DiscoverScreen(),
     BookmarkScreen(),
- 
     CartScreen(),
     ProfileScreen(),
   ];
@@ -34,22 +33,19 @@ class _EntryPointState extends State<EntryPoint> {
                 Theme.of(context).iconTheme.color!.withOpacity(
                     Theme.of(context).brightness == Brightness.dark ? 0.3 : 1),
             BlendMode.srcIn),
-      );    }
-    
+      );
+    }
 
     return Scaffold(
       appBar: AppBar(
-       
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         leading: const SizedBox(),
         leadingWidth: 0,
         centerTitle: false,
-        title: SvgPicture.asset(
-          "assets/logo/Uni2U",
-          colorFilter: ColorFilter.mode(
-              Theme.of(context).iconTheme.color!, BlendMode.srcIn),
-          height: 20,
-          width: 100,
+        title: Image.asset(
+          "assets/logo/U2U.png", // Change to PNG
+          height: 50,
+          width: 110,
         ),
         actions: [
           IconButton(

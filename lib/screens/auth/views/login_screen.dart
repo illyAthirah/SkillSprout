@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           children: [
             Image.asset(
-              "gambar7",
+              "assets/images/BANNER u2u.png",
               fit: BoxFit.cover,
             ),
             Padding(
@@ -45,15 +45,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: TextButton(
                       child: const Text("Forgot password"),
                       onPressed: () {
-                        Navigator.pushNamed(
-                            context, passwordRecoveryScreenRoute);
+                        //Navigator.pushNamed(
+                        //flutter run -d chromecontext, passwordRecoveryScreenRoute);
                       },
                     ),
                   ),
                   SizedBox(
-                    height: size.height > 700
-                        ? size.height * 0.1
-                        : defaultPadding,
+                    height:
+                        size.height > 700 ? size.height * 0.1 : defaultPadding,
                   ),
                   ElevatedButton(
                     onPressed: () {

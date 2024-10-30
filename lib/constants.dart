@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 
 // Just for demo
-const productDemoImg1 = "gambar 1";
-const productDemoImg2 = "gambar 2";
-const productDemoImg3 = "gambar 3";
+const productDemoImg1 = "assets/images/Cydcor-public-speaking-nerves.jpg";
+const productDemoImg2 = "assets/images/public-speaker.jpg";
+const productDemoImg3 = "assets/images/hq720.jpg";
 const productDemoImg4 = "gambar 4";
 const productDemoImg5 = "gambar 5";
 const productDemoImg6 = "gambar 6";

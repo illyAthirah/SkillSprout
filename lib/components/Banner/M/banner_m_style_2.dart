@@ -8,16 +8,14 @@ import '../../../constants.dart';
 class BannerMStyle2 extends StatelessWidget {
   const BannerMStyle2({
     super.key,
-    this.image = "https://i.imgur.com/J1Qjut7.png",
+    this.image = "assets/images/uni_1073-2.jpg",
     required this.title,
     required this.press,
     this.subtitle,
-    required this.discountParcent,
   });
   final String? image;
   final String title;
   final String? subtitle;
-  final int discountParcent;
   final VoidCallback press;
 
   @override
@@ -81,7 +79,6 @@ class BannerMStyle2 extends StatelessWidget {
         ),
         Align(
           alignment: Alignment.topCenter,
-          child: BannerDiscountTag(percentage: discountParcent),
         ),
       ],
     );
