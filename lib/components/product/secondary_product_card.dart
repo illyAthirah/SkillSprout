@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 class SecondaryProductCard extends StatelessWidget {
   const SecondaryProductCard({
     super.key,
-    required this.image,
     required this.topicName,
     required this.title,
     required this.range,
@@ -12,7 +11,7 @@ class SecondaryProductCard extends StatelessWidget {
     this.style,
     required String location,
   });
-  final String image, topicName, title;
+  final String  topicName, title;
   final double range;
   final VoidCallback? press;
 

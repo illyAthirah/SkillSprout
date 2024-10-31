@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shop/components/product/product_card.dart';
-import 'package:shop/models/topic_model.dart';
-import 'package:shop/route/screen_export.dart';
-
-import '../../../../constants.dart';
+import 'package:uni2u/components/product/product_card.dart';
+import 'package:uni2u/models/topic_model.dart';
+import 'package:uni2u/route/screen_export.dart';
+import 'package:uni2u/constants.dart';
 
 class PopularTopics extends StatelessWidget {
   const PopularTopics({
@@ -24,7 +23,7 @@ class PopularTopics extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 220,
+          height: 130,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: demoPopularTopics.length,
@@ -35,7 +34,6 @@ class PopularTopics extends StatelessWidget {
                     index == demoPopularTopics.length - 1 ? defaultPadding : 0,
               ),
               child: ProductCard(
-                image: demoPopularTopics[index].image,
                 topicName: demoPopularTopics[index].topicName,
                 title: demoPopularTopics[index].title,
                 range: demoPopularTopics[index].range,

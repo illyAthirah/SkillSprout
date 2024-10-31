@@ -22,7 +22,7 @@ class OffersSkelton extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Skeleton(
-                  width: 140,
+                  width: 130,
                   height: 20,
                 ),
                 SizedBox(height: defaultPadding / 2),

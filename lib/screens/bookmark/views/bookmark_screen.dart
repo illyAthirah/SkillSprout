@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop/components/product/product_card.dart';
-import 'package:shop/models/topic_model.dart';
-import 'package:shop/route/route_constants.dart';
+import 'package:uni2u/components/product/product_card.dart';
+import 'package:uni2u/models/topic_model.dart';
+import 'package:uni2u/route/route_constants.dart';
 
 import '../../../constants.dart';
 
@@ -28,7 +28,6 @@ class BookmarkScreen extends StatelessWidget {
               delegate: SliverChildBuilderDelegate(
                 (BuildContext context, int index) {
                   return ProductCard(
-                    image: demoPopularTopics[index].image,
                     topicName: demoPopularTopics[index].topicName,
                     title: demoPopularTopics[index].title,
                     range: demoPopularTopics[index].range,

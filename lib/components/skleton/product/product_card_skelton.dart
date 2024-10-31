@@ -11,8 +11,8 @@ class ProductCardSkelton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
-      height: 220,
-      width: 140,
+      height: 130,
+      width: 130,
       child: Padding(
         padding: EdgeInsets.all(defaultPadding / 2),
         child: Column(

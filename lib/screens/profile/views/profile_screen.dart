@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:shop/components/list_tile/divider_list_tile.dart';
-import 'package:shop/constants.dart';
-import 'package:shop/route/screen_export.dart';
+import 'package:uni2u/components/list_tile/divider_list_tile.dart';
+import 'package:uni2u/constants.dart';
+import 'package:uni2u/route/screen_export.dart';
 
 import 'components/profile_card.dart';
 import 'components/profile_menu_item_list_tile.dart';
@@ -18,13 +18,12 @@ class ProfileScreen extends StatelessWidget {
           ProfileCard(
             name: "Illy",
             email: "illyathirah@gmail.com",
-            imageSrc: "https://media.licdn.com/dms/image/v2/D5603AQGdQJqbLpDoug/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730087158611?e=1735776000&v=beta&t=ntNfAItQJ0gDPybpe5BP5X1HgCp_mUTDQ-kDR-85PTg",
-            
+            imageSrc:
+                "https://media.licdn.com/dms/image/v2/D5603AQGdQJqbLpDoug/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730087158611?e=1735776000&v=beta&t=ntNfAItQJ0gDPybpe5BP5X1HgCp_mUTDQ-kDR-85PTg",
             press: () {
               Navigator.pushNamed(context, userInfoScreenRoute);
             },
           ),
-         
 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
@@ -88,7 +87,7 @@ class ProfileScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
-          
+
           ProfileMenuListTile(
             text: "Location",
             svgSrc: "assets/icons/Location.svg",

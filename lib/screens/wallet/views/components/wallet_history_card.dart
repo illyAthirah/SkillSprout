@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop/components/product/secondary_product_card.dart';
+import 'package:uni2u/components/product/secondary_product_card.dart';
 
 import '../../../../constants.dart';
 
@@ -68,11 +68,11 @@ class WalletHistoryCard extends StatelessWidget {
                   left: defaultPadding,
                   right: defaultPadding),
               child: SecondaryProductCard(
-                image: products[index].image,
                 topicName: products[index].topicName,
                 title: products[index].title,
                 range: products[index].range,
-                location: products[index].location, // Added the required 'location' argument
+                location: products[index]
+                    .location, // Added the required 'location' argument
                 style: ElevatedButton.styleFrom(
                   maximumSize: const Size(double.infinity, 90),
                   padding: EdgeInsets.zero,

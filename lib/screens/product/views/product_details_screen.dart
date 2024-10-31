@@ -1,13 +1,14 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:shop/components/cart_button.dart';
-import 'package:shop/components/custom_modal_bottom_sheet.dart';
-import 'package:shop/components/product/product_card.dart';
-import 'package:shop/constants.dart';
-import 'package:shop/screens/product/views/product_returns_screen.dart';
-import 'package:shop/screens/product/views/added_to_cart_message_screen.dart'; // Update this path if necessary
+import 'package:uni2u/components/cart_button.dart';
+import 'package:uni2u/components/custom_modal_bottom_sheet.dart';
+import 'package:uni2u/components/product/product_card.dart';
+import 'package:uni2u/constants.dart';
+import 'package:uni2u/screens/product/views/added_to_cart_message_screen.dart'; // Update this path if necessary
 
-import 'package:shop/route/screen_export.dart';
+import 'package:uni2u/route/screen_export.dart';
 
 import 'components/notify_me_card.dart';
 import 'components/product_images.dart';
@@ -25,7 +26,7 @@ class ProductDetailsScreen extends StatelessWidget {
     var scaffold = Scaffold(
       bottomNavigationBar: isProductAvailable
           ? CartButton(
-              range: 140,
+              range: 130,
               press: () {
                 customModalBottomSheet(
                   context,
@@ -51,7 +52,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 IconButton(
                   onPressed: () {},
                   icon: SvgPicture.asset("assets/icons/Bookmark.svg",
-                      color: Theme.of(context).textTheme.bodyLarge!.color),
+                      color: Theme.of(context).colorScheme.onSurface),
                 ),
               ],
             ),
@@ -66,7 +67,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   "Learn how to speak in front of the crowd with confidence and without any hesitation. This course will help you to overcome your fear of public speaking.",
               rating: 4.4,
               numOfReviews: 126,
-              location: "University A, Location A",
+              location: "University A, University A",
             ),
             const SliverToBoxAdapter(
               child: Padding(
@@ -101,7 +102,7 @@ class ProductDetailsScreen extends StatelessWidget {
             ),
             SliverToBoxAdapter(
               child: SizedBox(
-                height: 220,
+                height: 130,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 5,
@@ -110,11 +111,10 @@ class ProductDetailsScreen extends StatelessWidget {
                         left: defaultPadding,
                         right: index == 2 ? defaultPadding : 0),
                     child: ProductCard(
-                      image: productDemoImg2,
                       title: "Basic to Robotics",
                       topicName: "Technology",
                       range: 350.00,
-                      location: '',
+                      location: "University A",
                       press: () {},
                     ),
                   ),

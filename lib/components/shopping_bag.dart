@@ -3,8 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../constants.dart';
 
-class ShoppingBag extends StatelessWidget {
-  const ShoppingBag({
+class uni2upingBag extends StatelessWidget {
+  const uni2upingBag({
     super.key,
     this.color,
     this.numOfItem,

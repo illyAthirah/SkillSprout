@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:shop/entry_point.dart';
+import 'package:uni2u/entry_point.dart';
 
 import 'screen_export.dart';
 
 // Yuo will get 50+ screens and more once you have the full template
-// 🔗 Full template: https://theflutterway.gumroad.com/l/fluttershop
+// 🔗 Full template: https://theflutterway.gumroad.com/l/flutteruni2u
 
 // NotificationPermissionScreen()
 // PreferredLanguageScreen()
@@ -58,7 +58,7 @@ import 'screen_export.dart';
 // GetHelpScreen()
 
 // ℹ️ All the comments screen are included in the full template
-// 🔗 Full template: https://theflutterway.gumroad.com/l/fluttershop
+// 🔗 Full template: https://theflutterway.gumroad.com/l/flutteruni2u
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {

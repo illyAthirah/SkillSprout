@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shop/components/product/secondary_product_card.dart';
-import 'package:shop/models/topic_model.dart';
+import 'package:uni2u/components/product/product_card.dart';
+import 'package:uni2u/models/topic_model.dart';
+import 'package:uni2u/route/screen_export.dart';
 
-import '../../../../constants.dart';
-import '../../../../route/route_constants.dart';
+import 'package:uni2u/constants.dart';
 
 class BestRating extends StatelessWidget {
   const BestRating({
@@ -24,18 +24,17 @@ class BestRating extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 114,
+          height: 130,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemCount: demoPopularTopics.length,
+            itemCount: demoBestRating.length,
             itemBuilder: (context, index) => Padding(
               padding: EdgeInsets.only(
                 left: defaultPadding,
                 right:
                     index == demoPopularTopics.length - 1 ? defaultPadding : 0,
               ),
-              child: SecondaryProductCard(
-                image: demoBestRating[index].image,
+              child: ProductCard(
                 topicName: demoBestRating[index].topicName,
                 title: demoBestRating[index].title,
                 range: demoBestRating[index].range,

@@ -33,7 +33,7 @@ class BannerSSkelton extends StatelessWidget {
                       ),
                       SizedBox(height: defaultPadding / 2),
                       Skeleton(
-                        width: 100,
+                        width: 130,
                         height: 24,
                       ),
                     ],

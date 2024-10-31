@@ -14,7 +14,7 @@ class OrderStatusCardSkelton extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Skeleton(height: 12, width: 100),
+        const Skeleton(height: 12, width: 130),
         const Padding(
           padding: EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
           child: Skeleton(width: 160),

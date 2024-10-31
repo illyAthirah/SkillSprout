@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shop/constants.dart';
-import 'package:shop/models/topic_model.dart';
+import 'package:uni2u/constants.dart';
+import 'package:uni2u/models/topic_model.dart';
 
 import 'components/wallet_balance_card.dart';
 import 'components/wallet_history_card.dart';
@@ -47,18 +47,20 @@ class WalletScreen extends StatelessWidget {
                       amount: 129,
                       products: [
                         TopicModel(
-                          image: 'path/to/image1.png',
+                          image: '',
                           topicName: 'AI',
                           title: 'AI Basic',
+                          style: Theme.of(context).textTheme.bodySmall,
                           range: 600.0,
-                          location: 'Location B',
+                          location: 'University B',
                         ),
                         TopicModel(
-                          image: 'path/to/image2.png',
+                          image: '',
                           topicName: 'Biology',
                           title: 'Basic to Human Anatomy',
+                          style: Theme.of(context).textTheme.bodySmall,
                           range: 500.0,
-                          location: 'Location A',
+                          location: 'University A',
                         ),
                       ],
                     ),

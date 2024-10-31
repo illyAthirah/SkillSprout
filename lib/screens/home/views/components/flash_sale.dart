@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shop/route/route_constants.dart';
+import 'package:uni2u/components/product/product_card.dart';
+import 'package:uni2u/models/topic_model.dart';
+import 'package:uni2u/route/screen_export.dart';
 
-import '/components/Banner/M/banner_m_with_counter.dart';
-import '../../../../components/product/product_card.dart';
-import '../../../../constants.dart';
-import '../../../../models/topic_model.dart';
+import 'package:uni2u/constants.dart';
 
 class NewTopics extends StatelessWidget {
   const NewTopics({
@@ -25,16 +24,17 @@ class NewTopics extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 220,
+          height: 130,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
+            itemCount: demoBestRating.length,
             itemBuilder: (context, index) => Padding(
               padding: EdgeInsets.only(
                 left: defaultPadding,
-                right: index == demoNewTopics.length - 1 ? defaultPadding : 0,
+                right:
+                    index == demoPopularTopics.length - 1 ? defaultPadding : 0,
               ),
               child: ProductCard(
-                image: demoNewTopics[index].image,
                 topicName: demoNewTopics[index].topicName,
                 title: demoNewTopics[index].title,
                 range: demoNewTopics[index].range,
@@ -46,7 +46,7 @@ class NewTopics extends StatelessWidget {
               ),
             ),
           ),
-        ),
+        )
       ],
     );
   }

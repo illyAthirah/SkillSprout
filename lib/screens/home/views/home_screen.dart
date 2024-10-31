@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:shop/components/Banner/S/banner';
-//import 'package:shop/components/Banner/S/banner';
-import 'package:shop/constants.dart';
-import 'package:shop/route/screen_export.dart';
+import 'package:uni2u/constants.dart';
+import 'package:uni2u/route/screen_export.dart';
 
 import 'components/flash_sale.dart';
 import 'components/most_popular.dart';

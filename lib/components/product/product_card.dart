@@ -2,20 +2,20 @@
 
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import 'package:uni2u/constants.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
     super.key,
-    required this.image,
     required this.topicName,
     required this.title,
+    required this.location,
     required this.range,
-    required this.press, required String location,
+    required this.press, 
   });
-  final String image, topicName, title;
+  final String topicName, title, location;
   final double range;
-  
+
   final VoidCallback press;
 
   @override
@@ -23,8 +23,8 @@ class ProductCard extends StatelessWidget {
     return OutlinedButton(
       onPressed: press,
       style: OutlinedButton.styleFrom(
-          minimumSize: const Size(140, 220),
-          maximumSize: const Size(140, 220),
+          minimumSize: const Size(140, 130),
+          maximumSize: const Size(140, 130),
           padding: const EdgeInsets.all(8)),
       child: Column(
         children: [
@@ -51,6 +51,15 @@ class ProductCard extends StatelessWidget {
                         .textTheme
                         .titleSmall!
                         .copyWith(fontSize: 12),
+                  ),
+                  const Spacer(),
+                  Text(
+                    location,
+                    style: const TextStyle(
+                      color: Color.fromARGB(255, 0, 37, 139),
+                      fontWeight: FontWeight.w500,
+                      fontSize: 12,
+                    ),
                   ),
                   const Spacer(),
                   Text(
