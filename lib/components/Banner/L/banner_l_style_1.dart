@@ -104,7 +104,7 @@ class BannerLStyle1 extends StatelessWidget {
               ),
               const Spacer(),
               const Text(
-                "Shop now  >",
+                "Browse now  >",
                 style: TextStyle(
                   fontFamily: grandisExtendedFont,
                   fontSize: 12,
