@@ -1,9 +1,9 @@
-Uni2U 📚✨
+###Uni2U 📚✨
 
 Empowering Growth Through Connection and Learning
 Built for HackathonX 2024
 
-Overview 🌟
+###Overview 🌟
 
 Uni2U is a mobile app designed to bridge the gap between students in rural areas and universities nearby, fostering skill development and knowledge sharing. We aim to make advanced learning topics, like Artificial Intelligence, more accessible by connecting schools and universities for meaningful, impactful collaborations.
 
@@ -15,14 +15,14 @@ Features 🚀
     Floating Payments: Secure payment system with funds released upon completion of service.
     Engagement & Feedback: In-app chat, course reviews, and feedback ensure quality interactions and continuous improvement.
 
-Tech Stack 🛠️
+###Tech Stack 🛠️
 
     Frontend: Flutter for a smooth, mobile-first experience. (Using RIght Now)
     Backend: Node.js for efficient API handling.(In planning)
     Database: MySQL for robust data storage. (In planning)
     Deployment: Firebase for seamless and scalable cloud deployment. (In planning)
 
-How It Works 🎓
+H###ow It Works 🎓
 
     Account Creation: Schools and verified university students sign up.
     Course Requests: Schools request specific topics; students respond based on expertise.
@@ -30,7 +30,7 @@ How It Works 🎓
     Engagement: Students and schools chat and arrange details.
     Payment & Feedback: Payments are only released post-service, with feedback to ensure transparency.
 
-Why Uni2U? 🤔
+###Why Uni2U? 🤔
 
 By making quality education more accessible to underserved areas, Uni2U directly aligns with Sustainable Development Goal #4: Quality Education. It’s not just an app – it’s a step towards democratizing learning and fostering community-driven educational impact.
 Our HackathonX Journey 🌐
