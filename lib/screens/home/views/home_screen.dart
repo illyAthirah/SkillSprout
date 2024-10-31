@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:uni2u/constants.dart';
-import 'package:uni2u/route/screen_export.dart';
 
-import 'components/flash_sale.dart';
-import 'components/most_popular.dart';
-import 'components/offer_carousel_and_categories.dart';
-import 'components/popular_products.dart';
+import 'components/new_topics.dart';
+import 'components/best_rating.dart';
+import 'components/carousel_and_categories.dart';
+import 'components/popular_topics.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

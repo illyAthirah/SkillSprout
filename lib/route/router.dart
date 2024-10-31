@@ -37,7 +37,7 @@ import 'screen_export.dart';
 // SizeGuideScreen()
 // categoryScreen()
 //ChatScreen()
-// EmptyCartScreen()
+// EmptychatScreen()
 // PaymentMethodScreen()
 // ThanksForOrderScreen()
 // CurrentPasswordScreen()

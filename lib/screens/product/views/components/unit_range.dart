@@ -25,8 +25,8 @@ class Unitrange extends StatelessWidget {
         Text.rich(
           TextSpan(
             text: rangeAfterDiscount != null
-                ? '\RM$rangeAfterDiscount'
-                : '\RM$range',
+                ? 'RM$rangeAfterDiscount'
+                : 'RM$range',
             style: Theme.of(context).textTheme.bodyMedium,
           ),
         )

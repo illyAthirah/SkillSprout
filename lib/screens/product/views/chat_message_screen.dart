@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:uni2u/constants.dart';
 import 'package:uni2u/route/screen_export.dart';
 
-class AddedToCartMessageScreen extends StatelessWidget {
-  const AddedToCartMessageScreen({super.key});
+class AddedTochatMessageScreen extends StatelessWidget {
+  const AddedTochatMessageScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

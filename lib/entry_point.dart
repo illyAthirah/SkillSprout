@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:uni2u/constants.dart';
 import 'package:uni2u/route/screen_export.dart';
-import 'package:uni2u/screens/checkout/views/cart_screen.dart';
+import 'package:uni2u/screens/chat/views/chat_screen.dart';
 
 class EntryPoint extends StatefulWidget {
   const EntryPoint({super.key});

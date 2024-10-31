@@ -2,14 +2,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:uni2u/components/cart_button.dart';
+import 'package:uni2u/components/chat_button.dart';
 import 'package:uni2u/components/custom_modal_bottom_sheet.dart';
 import 'package:uni2u/components/product/product_card.dart';
 import 'package:uni2u/constants.dart';
-import 'package:uni2u/screens/product/views/added_to_cart_message_screen.dart'; // Update this path if necessary
+import 'package:uni2u/screens/product/views/chat_message_screen.dart'; // Update this path if necessary
 
 import 'package:uni2u/route/screen_export.dart';
-
 import 'components/notify_me_card.dart';
 import 'components/product_images.dart';
 import 'components/product_info.dart';
@@ -25,13 +24,13 @@ class ProductDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var scaffold = Scaffold(
       bottomNavigationBar: isProductAvailable
-          ? CartButton(
+          ? chatButton(
               range: 130,
               press: () {
                 customModalBottomSheet(
                   context,
                   height: MediaQuery.of(context).size.height * 0.92,
-                  child: const AddedToCartMessageScreen(),
+                  child: const AddedTochatMessageScreen(),
                 );
               },
             )

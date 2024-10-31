@@ -18,8 +18,7 @@ class ProfileScreen extends StatelessWidget {
           ProfileCard(
             name: "Illy",
             email: "illyathirah@gmail.com",
-            imageSrc:
-                "https://media.licdn.com/dms/image/v2/D5603AQGdQJqbLpDoug/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730087158611?e=1735776000&v=beta&t=ntNfAItQJ0gDPybpe5BP5X1HgCp_mUTDQ-kDR-85PTg",
+            imageSrc: "assets/images/gambar formal illy.png",
             press: () {
               Navigator.pushNamed(context, userInfoScreenRoute);
             },

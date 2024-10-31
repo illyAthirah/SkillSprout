@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../constants.dart';
 
-class CartButton extends StatelessWidget {
-  const CartButton({
+class chatButton extends StatelessWidget {
+  const chatButton({
     super.key,
     required this.range,
     this.title = "Chat Now",
@@ -45,7 +45,7 @@ class CartButton extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "\RM${range.toStringAsFixed(2)}",
+                            "RM${range.toStringAsFixed(2)}",
                             style: Theme.of(context)
                                 .textTheme
                                 .titleSmall!
