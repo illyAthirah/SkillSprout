@@ -3,6 +3,7 @@
 **Empowering Growth Through Connection and Learning** 
 
 _Built for HackathonX UMPSA 2024_
+
 Overview 🌟
 
 Uni2U is a mobile app designed to bridge the gap between students in rural areas and universities nearby, fostering skill development and knowledge sharing. We aim to make advanced learning topics, like Artificial Intelligence, more accessible by connecting schools and universities for meaningful, impactful collaborations.
