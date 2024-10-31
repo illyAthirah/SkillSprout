@@ -17,7 +17,7 @@ class _EntryPointState extends State<EntryPoint> {
     HomeScreen(),
     DiscoverScreen(),
     BookmarkScreen(),
-    CartScreen(),
+    ChatScreen(),
     ProfileScreen(),
   ];
   int _currentIndex = 0;
@@ -127,9 +127,10 @@ class _EntryPointState extends State<EntryPoint> {
               label: "Bookmark",
             ),
             BottomNavigationBarItem(
-              icon: svgIcon("assets/icons/Bag.svg"),
-              activeIcon: svgIcon("assets/icons/Bag.svg", color: primaryColor),
-              label: "Cart",
+              icon: svgIcon("assets/icons/Chat-add.svg"),
+              activeIcon:
+                  svgIcon("assets/icons/Chat-add.svg", color: primaryColor),
+              label: "Chat",
             ),
             BottomNavigationBarItem(
               icon: svgIcon("assets/icons/Profile.svg"),

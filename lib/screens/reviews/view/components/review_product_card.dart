@@ -8,9 +8,9 @@ class ReviewProductInfoCard extends StatelessWidget {
     super.key,
     required this.image,
     required this.title,
-    required this.brand,
+    required this.category,
   });
-  final String image, title, brand;
+  final String image, title, category;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class ReviewProductInfoCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                brand.toUpperCase(),
+                category.toUpperCase(),
                 style:
                     const TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
               ),

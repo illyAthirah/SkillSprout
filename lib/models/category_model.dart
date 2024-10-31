@@ -19,40 +19,32 @@ final List<CategoryModel> demoCategoriesWithImage = [
 
 final List<CategoryModel> demoCategories = [
   CategoryModel(
-    title: "On sale",
-    svgSrc: "assets/icons/Sale.svg",
+    title: "Category",
+    svgSrc: "assets/icons/category.svg",
     subCategories: [
-      CategoryModel(title: "All Clothing"),
-      CategoryModel(title: "New In"),
-      CategoryModel(title: "Coats & Jackets"),
-      CategoryModel(title: "Dresses"),
-      CategoryModel(title: "Jeans"),
+      CategoryModel(title: "Technology"),
+      CategoryModel(title: "Language"),
+      CategoryModel(title: "Biology"),
+      CategoryModel(title: "Mathematics"),
+      CategoryModel(title: "Arts"),
     ],
   ),
   CategoryModel(
-    title: "Man’s & Woman’s",
-    svgSrc: "assets/icons/Man&Woman.svg",
+    title: "Range",
+    svgSrc: "assets/icons/Discount_tag.svg",
     subCategories: [
-      CategoryModel(title: "All Clothing"),
-      CategoryModel(title: "New In"),
-      CategoryModel(title: "Coats & Jackets"),
+      CategoryModel(title: "RM 300 - 500"),
+      CategoryModel(title: "Above RM 500"),
+      CategoryModel(title: "Below RM 300"),
     ],
   ),
   CategoryModel(
-    title: "Kids",
-    svgSrc: "assets/icons/Child.svg",
+    title: "Location/Method",
+    svgSrc: "assets/icons/location.svg",
     subCategories: [
-      CategoryModel(title: "All Clothing"),
-      CategoryModel(title: "New In"),
-      CategoryModel(title: "Coats & Jackets"),
-    ],
-  ),
-  CategoryModel(
-    title: "Accessories",
-    svgSrc: "assets/icons/Accessories.svg",
-    subCategories: [
-      CategoryModel(title: "All Clothing"),
-      CategoryModel(title: "New In"),
+      CategoryModel(title: "Near Me"),
+      CategoryModel(title: "Online"),
+      CategoryModel(title: "Hybrid"),
     ],
   ),
 ];

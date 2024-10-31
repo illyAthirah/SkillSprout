@@ -8,17 +8,19 @@ class ProductInfo extends StatelessWidget {
   const ProductInfo({
     super.key,
     required this.title,
-    required this.brand,
+    required this.category,
     required this.description,
     required this.rating,
     required this.numOfReviews,
     required this.isAvailable,
+    required this.location,
   });
 
-  final String title, brand, description;
+  final String title, category, description, location;
   final double rating;
   final int numOfReviews;
   final bool isAvailable;
+  
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +29,9 @@ class ProductInfo extends StatelessWidget {
       sliver: SliverToBoxAdapter(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+            children: [
             Text(
-              brand.toUpperCase(),
+              category.toUpperCase(),
               style: const TextStyle(fontWeight: FontWeight.w500),
             ),
             const SizedBox(height: defaultPadding / 2),
@@ -41,29 +43,45 @@ class ProductInfo extends StatelessWidget {
             const SizedBox(height: defaultPadding),
             Row(
               children: [
-                ProductAvailabilityTag(isAvailable: isAvailable),
-                const Spacer(),
-                SvgPicture.asset("assets/icons/Star_filled.svg"),
-                const SizedBox(width: defaultPadding / 4),
-                Text(
-                  "$rating ",
-                  style: Theme.of(context).textTheme.bodyLarge,
-                ),
-                Text("($numOfReviews Reviews)")
+              ProductAvailabilityTag(isAvailable: isAvailable),
+              const Spacer(),
+              SvgPicture.asset("assets/icons/Star_filled.svg"),
+              const SizedBox(width: defaultPadding / 4),
+              Text(
+                "$rating ",
+                style: Theme.of(context).textTheme.bodyLarge,
+              ),
+              Text("($numOfReviews Reviews)")
               ],
             ),
             const SizedBox(height: defaultPadding),
             Text(
               "Product info",
               style: Theme.of(context)
-                  .textTheme
-                  .titleMedium!
-                  .copyWith(fontWeight: FontWeight.w500),
+                .textTheme
+                .titleMedium!
+                .copyWith(fontWeight: FontWeight.w500),
             ),
             const SizedBox(height: defaultPadding / 2),
             Text(
               description,
               style: const TextStyle(height: 1.4),
+            ),
+            const SizedBox(height: defaultPadding / 2),
+            RichText(
+              text: TextSpan(
+              text: 'Location: ',
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+              children: <TextSpan>[
+                TextSpan(
+                text: location,
+                style: const TextStyle(fontWeight: FontWeight.normal, color: Colors.grey),
+                ),
+              ],
+              ),
             ),
             const SizedBox(height: defaultPadding / 2),
           ],

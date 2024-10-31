@@ -15,10 +15,8 @@ class AddedToCartMessageScreen extends StatelessWidget {
             children: [
               const Spacer(),
               Image.asset(
-                Theme.of(context).brightness == Brightness.light
-                    ? "assets/Illustration/success.png"
-                    : "assets/Illustration/success_dark.png",
-                height: MediaQuery.of(context).size.height * 0.3,
+                "assets/Illustration/success.jpg",
+                fit: BoxFit.cover,
               ),
               const Spacer(flex: 2),
               Text(

@@ -35,8 +35,8 @@ import 'screen_export.dart';
 // ShippingMethodsScreen()
 // ProductReviewsScreen()
 // SizeGuideScreen()
-// BrandScreen()
-// CartScreen()
+// categoryScreen()
+//ChatScreen()
 // EmptyCartScreen()
 // PaymentMethodScreen()
 // ThanksForOrderScreen()
@@ -62,7 +62,6 @@ import 'screen_export.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
-    
     case logInScreenRoute:
       return MaterialPageRoute(
         builder: (context) => const LoginScreen(),
@@ -75,7 +74,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //   return MaterialPageRoute(
     //     builder: (context) => const ProfileSetupScreen(),
     //   );
-    
+
     // case verificationMethodScreenRoute:
     //   return MaterialPageRoute(
     //     builder: (context) => const VerificationMethodScreen(),
@@ -123,7 +122,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           return ProductDetailsScreen(isProductAvailable: isProductAvailable);
         },
       );
-    
+
     // case addReviewsScreenRoute:
     //   return MaterialPageRoute(
     //     builder: (context) => const AddReviewScreen(),
@@ -132,9 +131,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const HomeScreen(),
       );
-    // case brandScreenRoute:
+    // case categoryScreenRoute:
     //   return MaterialPageRoute(
-    //     builder: (context) => const BrandScreen(),
+    //     builder: (context) => const categoryScreen(),
     //   );
     // case discoverWithImageScreenRoute:
     //   return MaterialPageRoute(
@@ -148,7 +147,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const DiscoverScreen(),
       );
-   
+
     case bookmarkScreenRoute:
       return MaterialPageRoute(
         builder: (context) => const BookmarkScreen(),
@@ -169,13 +168,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //   return MaterialPageRoute(
     //     builder: (context) => const ChatScreen(),
     //   );
-   
+
     case notificationsScreenRoute:
       return MaterialPageRoute(
         builder: (context) => const NotificationsScreen(),
       );
-   
-    
+
     // case orderProcessingScreenRoute:
     //   return MaterialPageRoute(
     //     builder: (context) => const OrderProcessingScreen(),
@@ -212,7 +210,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const WalletScreen(),
       );
-   
+
     default:
       return MaterialPageRoute(
         // Make a screen for undefine

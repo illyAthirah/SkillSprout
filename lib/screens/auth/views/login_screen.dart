@@ -37,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: defaultPadding / 2),
                   const Text(
-                    "Log in with your data that you intered during your registration.",
+                    "Log in with registered details.",
                   ),
                   const SizedBox(height: defaultPadding),
                   LogInForm(formKey: _formKey),
@@ -45,8 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: TextButton(
                       child: const Text("Forgot password"),
                       onPressed: () {
-                        //Navigator.pushNamed(
-                        //flutter run -d chromecontext, passwordRecoveryScreenRoute);
+                        
                       },
                     ),
                   ),

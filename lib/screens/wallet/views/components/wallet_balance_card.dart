@@ -51,19 +51,7 @@ class WalletBalanceCard extends StatelessWidget {
               ),
             ),
           ),
-          ElevatedButton(
-            onPressed: onTabChargeBalance,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF9581FF),
-              shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(defaultBorderRadious),
-                  bottomRight: Radius.circular(defaultBorderRadious),
-                ),
-              ),
-            ),
-            child: const Text("+ Charge Balance"),
-          )
+         
         ],
       ),
     );

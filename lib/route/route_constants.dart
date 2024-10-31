@@ -1,4 +1,3 @@
-
 const String notificationPermissionScreenRoute = "notification_permission";
 const String preferredLanuageScreenRoute = "preferred_language";
 const String logInScreenRoute = "login";
@@ -19,7 +18,7 @@ const String productDetailsScreenRoute = "product_details";
 const String productReviewsScreenRoute = "product_reviews";
 const String addReviewsScreenRoute = "add_reviews";
 const String homeScreenRoute = "home";
-const String brandScreenRoute = "brand";
+const String categoryScreenRoute = "category";
 const String discoverWithImageScreenRoute = "discover_with_image";
 const String subDiscoverScreenRoute = "sub_discover";
 const String discoverScreenRoute = "discover";
@@ -53,7 +52,7 @@ const String preferencesScreenRoute = "preferences";
 const String emptyPaymentScreenRoute = "empty_payment";
 const String emptyWalletScreenRoute = "empty_wallet";
 const String walletScreenRoute = "wallet";
-const String cartScreenRoute = "cart";
+const StringChatScreenRoute = "cart";
 const String paymentMethodScreenRoute = "payment_method";
 const String addNewCardScreenRoute = "add_new_card";
 const String thanksForOrderScreenRoute = "thanks_order";

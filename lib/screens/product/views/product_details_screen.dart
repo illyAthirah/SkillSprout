@@ -5,6 +5,7 @@ import 'package:shop/components/custom_modal_bottom_sheet.dart';
 import 'package:shop/components/product/product_card.dart';
 import 'package:shop/constants.dart';
 import 'package:shop/screens/product/views/product_returns_screen.dart';
+import 'package:shop/screens/product/views/added_to_cart_message_screen.dart'; // Update this path if necessary
 
 import 'package:shop/route/screen_export.dart';
 
@@ -13,7 +14,6 @@ import 'components/product_images.dart';
 import 'components/product_info.dart';
 import 'components/product_list_tile.dart';
 import '../../../components/review_card.dart';
-import 'product_buy_now_screen.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   const ProductDetailsScreen({super.key, this.isProductAvailable = true});
@@ -22,7 +22,7 @@ class ProductDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    var scaffold = Scaffold(
       bottomNavigationBar: isProductAvailable
           ? CartButton(
               range: 140,
@@ -30,13 +30,13 @@ class ProductDetailsScreen extends StatelessWidget {
                 customModalBottomSheet(
                   context,
                   height: MediaQuery.of(context).size.height * 0.92,
-                  child: const ProductBuyNowScreen(),
+                  child: const AddedToCartMessageScreen(),
                 );
               },
             )
           :
 
-          /// If profuct is not available then show [NotifyMeCard]
+          /// If product is not available then show [NotifyMeCard]
           NotifyMeCard(
               isNotify: false,
               onChanged: (value) {},
@@ -59,35 +59,14 @@ class ProductDetailsScreen extends StatelessWidget {
               images: [productDemoImg1, productDemoImg2, productDemoImg3],
             ),
             ProductInfo(
-              brand: "LIPSY LONDON",
-              title: "Sleeveless Ruffle",
+              category: "Language",
+              title: "Intoduction to Public Speaking",
               isAvailable: isProductAvailable,
               description:
-                  "A cool gray cap in soft corduroy. Watch me.' By buying cotton products from Lindex, you’re supporting more responsibly...",
+                  "Learn how to speak in front of the crowd with confidence and without any hesitation. This course will help you to overcome your fear of public speaking.",
               rating: 4.4,
               numOfReviews: 126,
-            ),
-            ProductListTile(
-              svgSrc: "assets/icons/Product.svg",
-              title: "Product Details",
-              press: () {},
-            ),
-            ProductListTile(
-              svgSrc: "assets/icons/Delivery.svg",
-              title: "Shipping Information",
-              press: () {},
-            ),
-            ProductListTile(
-              svgSrc: "assets/icons/Return.svg",
-              title: "Returns",
-              isShowBottomBorder: true,
-              press: () {
-                customModalBottomSheet(
-                  context,
-                  height: MediaQuery.of(context).size.height * 0.92,
-                  child: const ProductReturnsScreen(),
-                );
-              },
+              location: "University A, Location A",
             ),
             const SliverToBoxAdapter(
               child: Padding(
@@ -129,14 +108,14 @@ class ProductDetailsScreen extends StatelessWidget {
                   itemBuilder: (context, index) => Padding(
                     padding: EdgeInsets.only(
                         left: defaultPadding,
-                        right: index == 4 ? defaultPadding : 0),
+                        right: index == 2 ? defaultPadding : 0),
                     child: ProductCard(
                       image: productDemoImg2,
-                      title: "Sleeveless Tiered Dobby Swing Dress",
-                      topicName: "LIPSY LONDON",
-                      range: 24.65,
+                      title: "Basic to Robotics",
+                      topicName: "Technology",
+                      range: 350.00,
                       location: '',
-                      press: () {}, 
+                      press: () {},
                     ),
                   ),
                 ),
@@ -149,5 +128,6 @@ class ProductDetailsScreen extends StatelessWidget {
         ),
       ),
     );
+    return scaffold;
   }
 }

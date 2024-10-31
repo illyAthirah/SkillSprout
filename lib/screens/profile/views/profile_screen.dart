@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shop/components/list_tile/divider_list_tile.dart';
-import 'package:shop/components/network_image_with_loader.dart';
 import 'package:shop/constants.dart';
 import 'package:shop/route/screen_export.dart';
 
@@ -19,7 +18,7 @@ class ProfileScreen extends StatelessWidget {
           ProfileCard(
             name: "Illy",
             email: "illyathirah@gmail.com",
-            imageSrc: "https://i.imgur.com/IXnwbLk.png",
+            imageSrc: "https://media.licdn.com/dms/image/v2/D5603AQGdQJqbLpDoug/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730087158611?e=1735776000&v=beta&t=ntNfAItQJ0gDPybpe5BP5X1HgCp_mUTDQ-kDR-85PTg",
             
             press: () {
               Navigator.pushNamed(context, userInfoScreenRoute);
@@ -36,21 +35,11 @@ class ProfileScreen extends StatelessWidget {
           ),
           const SizedBox(height: defaultPadding / 2),
           ProfileMenuListTile(
-            text: "Orders",
+            text: "Bookings",
             svgSrc: "assets/icons/Order.svg",
             press: () {
               Navigator.pushNamed(context, ordersScreenRoute);
             },
-          ),
-          ProfileMenuListTile(
-            text: "Returns",
-            svgSrc: "assets/icons/Return.svg",
-            press: () {},
-          ),
-          ProfileMenuListTile(
-            text: "Wishlist",
-            svgSrc: "assets/icons/Wishlist.svg",
-            press: () {},
           ),
           ProfileMenuListTile(
             text: "Addresses",
@@ -90,13 +79,6 @@ class ProfileScreen extends StatelessWidget {
               Navigator.pushNamed(context, enableNotificationScreenRoute);
             },
           ),
-          ProfileMenuListTile(
-            text: "Preferences",
-            svgSrc: "assets/icons/Preferences.svg",
-            press: () {
-              Navigator.pushNamed(context, preferencesScreenRoute);
-            },
-          ),
           const SizedBox(height: defaultPadding),
           Padding(
             padding: const EdgeInsets.symmetric(
@@ -106,41 +88,12 @@ class ProfileScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
-          ProfileMenuListTile(
-            text: "Language",
-            svgSrc: "assets/icons/Language.svg",
-            press: () {
-              Navigator.pushNamed(context, selectLanguageScreenRoute);
-            },
-          ),
+          
           ProfileMenuListTile(
             text: "Location",
             svgSrc: "assets/icons/Location.svg",
             press: () {},
           ),
-          const SizedBox(height: defaultPadding),
-          Padding(
-            padding: const EdgeInsets.symmetric(
-                horizontal: defaultPadding, vertical: defaultPadding / 2),
-            child: Text(
-              "Help & Support",
-              style: Theme.of(context).textTheme.titleSmall,
-            ),
-          ),
-          ProfileMenuListTile(
-            text: "Get Help",
-            svgSrc: "assets/icons/Help.svg",
-            press: () {
-              Navigator.pushNamed(context, getHelpScreenRoute);
-            },
-          ),
-          ProfileMenuListTile(
-            text: "FAQ",
-            svgSrc: "assets/icons/FAQ.svg",
-            press: () {},
-            isShowDivider: false,
-          ),
-          const SizedBox(height: defaultPadding),
 
           // Log Out
           ListTile(

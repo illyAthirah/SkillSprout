@@ -59,7 +59,7 @@ class NotifyMeCard extends StatelessWidget {
                 const SizedBox(width: defaultPadding),
                 Expanded(
                   child: Text(
-                    "Notify when product back to stock.",
+                    "Notify when course is available.",
                     style: TextStyle(
                         color: isNotify
                             ? Colors.white
